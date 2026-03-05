@@ -19,7 +19,7 @@ The orchestrator automatically:
 5. Produces human-readable explanations for auditability
 6. If validation from validator agent fails then again calls sql_generator agent using feedback loop.(MAX_RETRIES=3)
 
-## 🔄 Multi-Agent Coordination Flow
+## Multi-Agent Coordination Flow
 
 ```text
                  ┌──────────────────────┐
