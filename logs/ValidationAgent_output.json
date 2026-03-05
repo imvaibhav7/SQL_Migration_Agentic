@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "warnings": [],
+  "data": {
+    "issues": [],
+    "markdown": "# Validation Report\n\n## Status\nSUCCESS\n\nNo migration risks or validation issues were detected.\n"
+  }
+}

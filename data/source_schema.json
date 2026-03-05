@@ -1,0 +1,51 @@
+{
+  "tables": [
+    {
+      "table": "re_constituents",
+      "columns": [
+        {"name": "constituent_id", "type": "INT"},
+        {"name": "first_name", "type": "TEXT"},
+        {"name": "last_name", "type": "TEXT"},
+        {"name": "email_address", "type": "TEXT"},
+        {"name": "phone_number", "type": "TEXT"},
+        {"name": "constituent_type", "type": "TEXT"},
+        {"name": "created_date", "type": "DATE"}
+      ]
+    },
+    {
+      "table": "re_gifts",
+      "columns": [
+        {"name": "gift_id", "type": "INT"},
+        {"name": "constituent_id", "type": "INT"},
+        {"name": "campaign_id", "type": "INT"},
+        {"name": "gift_amount", "type": "DECIMAL"},
+        {"name": "gift_date", "type": "DATE"},
+        {"name": "payment_method", "type": "TEXT"},
+        {"name": "notes", "type": "TEXT"}
+      ]
+    },
+    {
+      "table": "re_campaigns",
+      "columns": [
+        {"name": "campaign_id", "type": "INT"},
+        {"name": "campaign_name", "type": "TEXT"},
+        {"name": "goal_amount", "type": "DECIMAL"},
+        {"name": "start_date", "type": "DATE"},
+        {"name": "end_date", "type": "DATE"},
+        {"name": "status", "type": "TEXT"}
+      ]
+    },
+    {
+      "table": "re_addresses",
+      "columns": [
+        {"name": "address_id", "type": "INT"},
+        {"name": "constituent_id", "type": "INT"},
+        {"name": "street_line1", "type": "TEXT"},
+        {"name": "city", "type": "TEXT"},
+        {"name": "state_province", "type": "TEXT"},
+        {"name": "postal_code", "type": "TEXT"},
+        {"name": "country", "type": "TEXT"}
+      ]
+    }
+  ]
+}

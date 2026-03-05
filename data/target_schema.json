@@ -1,0 +1,51 @@
+{
+  "tables": [
+    {
+      "table": "Contact",
+      "columns": [
+        {"name": "Id", "type": "TEXT"},
+        {"name": "FirstName", "type": "TEXT"},
+        {"name": "LastName", "type": "TEXT"},
+        {"name": "Email", "type": "TEXT"},
+        {"name": "Phone", "type": "TEXT"},
+        {"name": "Type", "type": "TEXT"},
+        {"name": "CreatedDate", "type": "DATE"}
+      ]
+    },
+    {
+      "table": "Donation",
+      "columns": [
+        {"name": "Id", "type": "TEXT"},
+        {"name": "ContactId", "type": "TEXT"},
+        {"name": "CampaignId", "type": "TEXT"},
+        {"name": "Amount", "type": "DECIMAL"},
+        {"name": "DonationDate", "type": "DATE"},
+        {"name": "PaymentMethod", "type": "TEXT"},
+        {"name": "Description", "type": "TEXT"}
+      ]
+    },
+    {
+      "table": "Campaign",
+      "columns": [
+        {"name": "Id", "type": "TEXT"},
+        {"name": "Name", "type": "TEXT"},
+        {"name": "TargetAmount", "type": "DECIMAL"},
+        {"name": "StartDate", "type": "DATE"},
+        {"name": "EndDate", "type": "DATE"},
+        {"name": "Status", "type": "TEXT"}
+      ]
+    },
+    {
+      "table": "Address",
+      "columns": [
+        {"name": "Id", "type": "TEXT"},
+        {"name": "ContactId", "type": "TEXT"},
+        {"name": "Street", "type": "TEXT"},
+        {"name": "City", "type": "TEXT"},
+        {"name": "State", "type": "TEXT"},
+        {"name": "PostalCode", "type": "TEXT"},
+        {"name": "Country", "type": "TEXT"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "status": "success",
+  "warnings": [],
+  "data": {
+    "resolved_mappings": [
+      {
+        "source_table": "re_constituents",
+        "source": "constituent_id",
+        "target_table": "Contact",
+        "target": "Id",
+        "cast": "TEXT",
+        "transform": "CAST AS TEXT"
+      },
+      {
+        "source_table": "re_constituents",
+        "source": "first_name",
+        "target_table": "Contact",
+        "target": "FirstName",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_constituents",
+        "source": "last_name",
+        "target_table": "Contact",
+        "target": "LastName",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_constituents",
+        "source": "email_address",
+        "target_table": "Contact",
+        "target": "Email",
+        "cast": null,
+        "transform": "LOWER"
+      },
+      {
+        "source_table": "re_constituents",
+        "source": "phone_number",
+        "target_table": "Contact",
+        "target": "Phone",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_constituents",
+        "source": "constituent_type",
+        "target_table": "Contact",
+        "target": "Type",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_constituents",
+        "source": "created_date",
+        "target_table": "Contact",
+        "target": "CreatedDate",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_gifts",
+        "source": "gift_id",
+        "target_table": "Donation",
+        "target": "Id",
+        "cast": "TEXT",
+        "transform": "CAST AS TEXT"
+      },
+      {
+        "source_table": "re_gifts",
+        "source": "constituent_id",
+        "target_table": "Donation",
+        "target": "ContactId",
+        "cast": "TEXT",
+        "transform": "CAST AS TEXT"
+      },
+      {
+        "source_table": "re_gifts",
+        "source": "campaign_id",
+        "target_table": "Donation",
+        "target": "CampaignId",
+        "cast": "TEXT",
+        "transform": "CAST AS TEXT"
+      },
+      {
+        "source_table": "re_gifts",
+        "source": "gift_amount",
+        "target_table": "Donation",
+        "target": "Amount",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_gifts",
+        "source": "gift_date",
+        "target_table": "Donation",
+        "target": "DonationDate",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_gifts",
+        "source": "payment_method",
+        "target_table": "Donation",
+        "target": "PaymentMethod",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_gifts",
+        "source": "notes",
+        "target_table": "Donation",
+        "target": "Description",
+        "cast": null,
+        "transform": "TRIM"
+      },
+      {
+        "source_table": "re_campaigns",
+        "source": "campaign_id",
+        "target_table": "Campaign",
+        "target": "Id",
+        "cast": "TEXT",
+        "transform": "CAST AS TEXT"
+      },
+      {
+        "source_table": "re_campaigns",
+        "source": "campaign_name",
+        "target_table": "Campaign",
+        "target": "Name",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_campaigns",
+        "source": "goal_amount",
+        "target_table": "Campaign",
+        "target": "TargetAmount",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_campaigns",
+        "source": "start_date",
+        "target_table": "Campaign",
+        "target": "StartDate",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_campaigns",
+        "source": "end_date",
+        "target_table": "Campaign",
+        "target": "EndDate",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_campaigns",
+        "source": "status",
+        "target_table": "Campaign",
+        "target": "Status",
+        "cast": null,
+        "transform": "UPPER"
+      },
+      {
+        "source_table": "re_addresses",
+        "source": "address_id",
+        "target_table": "Address",
+        "target": "Id",
+        "cast": "TEXT",
+        "transform": "CAST AS TEXT"
+      },
+      {
+        "source_table": "re_addresses",
+        "source": "constituent_id",
+        "target_table": "Address",
+        "target": "ContactId",
+        "cast": "TEXT",
+        "transform": "CAST AS TEXT"
+      },
+      {
+        "source_table": "re_addresses",
+        "source": "street_line1",
+        "target_table": "Address",
+        "target": "Street",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_addresses",
+        "source": "city",
+        "target_table": "Address",
+        "target": "City",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_addresses",
+        "source": "state_province",
+        "target_table": "Address",
+        "target": "State",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_addresses",
+        "source": "postal_code",
+        "target_table": "Address",
+        "target": "PostalCode",
+        "cast": null,
+        "transform": null
+      },
+      {
+        "source_table": "re_addresses",
+        "source": "country",
+        "target_table": "Address",
+        "target": "Country",
+        "cast": null,
+        "transform": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+source_table,source_field,target_table,target_field,transform
+re_constituents,constituent_id,Contact,Id,CAST AS TEXT
+re_constituents,first_name,Contact,FirstName,
+re_constituents,last_name,Contact,LastName,
+re_constituents,email_address,Contact,Email,LOWER
+re_constituents,phone_number,Contact,Phone,
+re_constituents,constituent_type,Contact,Type,
+re_constituents,created_date,Contact,CreatedDate,
+
+re_gifts,gift_id,Donation,Id,CAST AS TEXT
+re_gifts,constituent_id,Donation,ContactId,CAST AS TEXT
+re_gifts,campaign_id,Donation,CampaignId,CAST AS TEXT
+re_gifts,gift_amount,Donation,Amount,
+re_gifts,gift_date,Donation,DonationDate,
+re_gifts,payment_method,Donation,PaymentMethod,
+re_gifts,notes,Donation,Description,TRIM
+
+re_campaigns,campaign_id,Campaign,Id,CAST AS TEXT
+re_campaigns,campaign_name,Campaign,Name,
+re_campaigns,goal_amount,Campaign,TargetAmount,
+re_campaigns,start_date,Campaign,StartDate,
+re_campaigns,end_date,Campaign,EndDate,
+re_campaigns,status,Campaign,Status,UPPER
+
+re_addresses,address_id,Address,Id,CAST AS TEXT
+re_addresses,constituent_id,Address,ContactId,CAST AS TEXT
+re_addresses,street_line1,Address,Street,
+re_addresses,city,Address,City,
+re_addresses,state_province,Address,State,
+re_addresses,postal_code,Address,PostalCode,
+re_addresses,country,Address,Country,

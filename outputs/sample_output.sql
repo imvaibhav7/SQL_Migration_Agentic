@@ -1,0 +1,7 @@
+INSERT INTO Contact (Id, FirstName, LastName, Email, Phone, Type, CreatedDate) SELECT CAST(constituent_id AS TEXT) AS Id, first_name AS FirstName, last_name AS LastName, LOWER(email_address) AS Email, phone_number AS Phone, constituent_type AS Type, created_date AS CreatedDate FROM re_constituents AS src;
+
+INSERT INTO Donation (Id, ContactId, CampaignId, Amount, DonationDate, PaymentMethod, Description) SELECT CAST(gift_id AS TEXT) AS Id, CAST(constituent_id AS TEXT) AS ContactId, CAST(campaign_id AS TEXT) AS CampaignId, gift_amount AS Amount, gift_date AS DonationDate, payment_method AS PaymentMethod, TRIM(notes) AS Description FROM re_gifts AS src;
+
+INSERT INTO Campaign (Id, Name, TargetAmount, StartDate, EndDate, Status) SELECT CAST(campaign_id AS TEXT) AS Id, campaign_name AS Name, goal_amount AS TargetAmount, start_date AS StartDate, end_date AS EndDate, UPPER(status) AS Status FROM re_campaigns AS src;
+
+INSERT INTO Address (Id, ContactId, Street, City, State, PostalCode, Country) SELECT CAST(address_id AS TEXT) AS Id, CAST(constituent_id AS TEXT) AS ContactId, street_line1 AS Street, city AS City, state_province AS State, postal_code AS PostalCode, country AS Country FROM re_addresses AS src;
